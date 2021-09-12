@@ -43,15 +43,15 @@ const Contacts = () => {
                 </ContactEvent>
 
                 <ContactEvent>
-                    <ContactGPS>
+                    <ContactGPS> 
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9487.897368670738!2d-113.6241906!3d53.5225151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8546a29e09b26fcb!2sWest%20Edmonton%20Mall!5e0!3m2!1sen!2sca!4v1631322809603!5m2!1sen!2sca" 
-                                width="400" 
+                                width="600" 
                                 height="450"
                                 frameBorder="0"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 aria-hidden="false"
-                                tabIndex="0"/>
+                                tabIndex="0" />
                     </ContactGPS>
                 </ContactEvent>
             </ContactSection>

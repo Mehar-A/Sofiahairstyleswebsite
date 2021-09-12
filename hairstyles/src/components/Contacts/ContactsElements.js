@@ -51,7 +51,6 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-border-radius: 10px;
 max-height: 500px;
 padding: 40px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.2);
@@ -76,14 +75,12 @@ margin: 0 50px 0 0;
 
 // col2
 export const ContactGPS = styled.div`
-width: 80%;
 height: auto;
 margin: auto;
 display: flex;
 flex-wrap: wrap;
 padding: 10px;
-border-radius: 10px;
-box-shadow: 0 0 10 0 #666;
+margin: 0 0 0 -100px;
 `;
 
 export const ContactBox = styled.div`

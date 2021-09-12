@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const ProductContainers = styled.div`
-height: 900px;
+height: 950px;
 display: flex;
 flex-direction: column;
 justify-content: center;
