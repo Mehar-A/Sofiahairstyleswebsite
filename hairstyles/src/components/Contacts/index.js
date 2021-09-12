@@ -1,13 +1,16 @@
 import React from 'react'
-import { ContactContainer, ContactSection, ContactH1, ContactEvent, ContactInfo, ContactGPS, ContactBox, ContactIcon, ContactIconColor,ContactText, ContactH3, ContactTextP} from './ContactsElements'
+import { ContactContainer, ContactSection, ContactH1, ContactEvent, ContactInfo, ContactGPS, ContactBox, ContactIcon, ContactIconColor,ContactText, ContactH3, ContactTextP,ContactEvent2} from './ContactsElements'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMapMarkerAlt, faPhoneAlt, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+
+
 
 const Contacts = () => {
     return (
         <ContactContainer id="contact">
             <ContactH1>Contact Us</ContactH1>
             <ContactSection>
+
                 <ContactEvent>
                     <ContactInfo>
                         <ContactBox>
@@ -42,9 +45,14 @@ const Contacts = () => {
                     </ContactInfo>
                 </ContactEvent>
 
-                <ContactEvent>
+                {
+                    // fix this map issue later
+                }
+                <ContactEvent2>
                     <ContactGPS> 
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9487.897368670738!2d-113.6241906!3d53.5225151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8546a29e09b26fcb!2sWest%20Edmonton%20Mall!5e0!3m2!1sen!2sca!4v1631322809603!5m2!1sen!2sca" 
+                                <iframe 
+                                title="This is a unique title"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9487.897368670738!2d-113.6241906!3d53.5225151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8546a29e09b26fcb!2sWest%20Edmonton%20Mall!5e0!3m2!1sen!2sca!4v1631322809603!5m2!1sen!2sca" 
                                 width="600" 
                                 height="450"
                                 frameBorder="0"
@@ -53,7 +61,7 @@ const Contacts = () => {
                                 aria-hidden="false"
                                 tabIndex="0" />
                     </ContactGPS>
-                </ContactEvent>
+                </ContactEvent2>
             </ContactSection>
         </ContactContainer>
     )

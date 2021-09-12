@@ -61,6 +61,24 @@ overflow: hidden;
 
 `;
 
+export const ContactEvent2 = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+max-height: 500px;
+padding: 40px;
+transition: all 0.2s ease-in-out;
+overflow: hidden;
+margin: 0 0 0 -100px;
+
+@media screen and (max-width: 768px){
+    margin: 0;
+}
+
+`;
+
+
 // col1
 export const ContactInfo = styled.div`
 width: 50%;
@@ -75,12 +93,13 @@ margin: 0 50px 0 0;
 
 // col2
 export const ContactGPS = styled.div`
-height: auto;
+width: 100%;
+height: 100%;
 margin: auto;
 display: flex;
 flex-wrap: wrap;
 padding: 10px;
-margin: 0 0 0 -100px;
+box-shadow: 0 0 10 0 #666;
 `;
 
 export const ContactBox = styled.div`
