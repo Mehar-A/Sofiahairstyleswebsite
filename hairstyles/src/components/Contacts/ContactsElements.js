@@ -42,6 +42,13 @@ color: white;
 }
 `;
 
+export const ContactHeader = styled.div`
+margin: -50px 0 100px 0;
+
+@media screen and (max-width: 768px){
+    margin: 0;
+}
+`;
 
 
 
@@ -132,9 +139,45 @@ export const ContactBack = styled.div`
 width: 100%;
 height: auto;
 flex: 50%;
-
 `;
 
+
+// socials
+export const ContactSocial = styled.div`
+color: black;
+`;
+
+export const ContactUL = styled.ul`
+padding: 0;
+margin: 0;
+`;
+
+export const ContactLI = styled.li`
+list-style: none;
+display: inline-block;
+margin-right: 20px;
+margin-top: 5px;
+`;
+
+export const ContactA = styled.a`
+width: 30px;
+height: 30px;
+text-align: center;
+background: #fff;
+border-radius: 50px;
+`;
+
+export const ContactI = styled.i`
+min-width: 60px;
+height: 60px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+
+`;
 
 
 export const ContactText = styled.div``;

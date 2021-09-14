@@ -1,14 +1,15 @@
 import React from 'react'
-import { ContactContainer, ContactSection, ContactH1, ContactEvent, ContactInfo, ContactGPS, ContactBox, ContactIcon, ContactIconColor,ContactText, ContactH3, ContactTextP,ContactEvent2} from './ContactsElements'
+import { ContactContainer, ContactHeader, ContactSection,ContactA, ContactI, ContactH1, ContactEvent, ContactInfo, ContactGPS, ContactBox, ContactIcon, ContactIconColor,ContactText, ContactH3, ContactTextP,ContactEvent2,ContactSocial, ContactUL, ContactLI} from './ContactsElements'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMapMarkerAlt, faPhoneAlt, faEnvelope} from '@fortawesome/free-solid-svg-icons'
-
+import { FiInstagram } from 'react-icons/fi';
 
 
 const Contacts = () => {
     return (
         <ContactContainer id="contact">
-            <ContactH1>Contact Us</ContactH1>
+            <ContactHeader><ContactH1>Contact Us</ContactH1></ContactHeader>
+
             <ContactSection>
 
                 <ContactEvent>
@@ -43,6 +44,13 @@ const Contacts = () => {
                                 </ContactText>
                             </ContactBox>
                     </ContactInfo>
+
+                    <ContactSocial>
+                        <ContactUL>
+                            <ContactLI><ContactA href="https://www.instagram.com/"><ContactI><FiInstagram /></ContactI></ContactA></ContactLI>
+                            <ContactLI><ContactA href="https://www.instagram.com/"><ContactI><FiInstagram /></ContactI></ContactA></ContactLI>
+                        </ContactUL>
+                    </ContactSocial>
                 </ContactEvent>
 
                 {
