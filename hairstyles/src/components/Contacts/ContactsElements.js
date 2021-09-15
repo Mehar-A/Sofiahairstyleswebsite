@@ -11,20 +11,20 @@ align-items: center;
 background : #010606;
 
 @media screen and (max-width: 768px){
-    height: 1000px;
+    height: 1200px;
 }
 
 `;
 
 export const ContactSection = styled.div`
 max-width: 1000px;
-margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr;
 align-items: center;
 grid-gap: 16px;
 padding: 0 -50px;
 overflow: hidden;
+margin: -20px 0 -100px 0;
 
 
 @media screen and (max-width: 768px){
@@ -43,10 +43,10 @@ color: white;
 `;
 
 export const ContactHeader = styled.div`
-margin: -50px 0 100px 0;
+margin: -50px 0 120px 0;
 
 @media screen and (max-width: 768px){
-    margin: 0;
+    margin: -70px 0 -100px 0;
 }
 `;
 
@@ -64,7 +64,9 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 transition: all 0.2s ease-in-out;
 overflow: hidden;
 
-
+@media screen and (max-width: 768px){
+    margin: 100px 0 -30px 0;
+}
 
 `;
 
@@ -177,12 +179,41 @@ align-items: center;
 border-radius: 50%;
 font-size: 22px;
 
+&:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+`;
+
+export const ContactColor1 = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 `;
 
 
+export const ContactColor2 = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+color: blue;
+`;
+
 export const ContactText = styled.div``;
 
-export const ContactH3 =  styled.h3``;
+export const ContactH3 =  styled.h3`
+color: #fff;
+`;
+
+export const ContactNew =  styled.h3`
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 0 0 -20px;
+`;
 
 export const ContactTextP = styled.div``;
 export const ContactCol2 = styled.div``;

@@ -30,7 +30,7 @@ const HeroSection = () => {
                     Good day
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to ="about" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark = "true">
+                    <Button to ="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark = "true">
                         Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>
