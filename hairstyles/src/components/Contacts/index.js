@@ -1,9 +1,20 @@
 import React from 'react'
-import { ContactContainer, ContactHeader,ContactNew, ContactColor1,ContactColor2, ContactSection,ContactA, ContactI, ContactH1, ContactEvent, ContactInfo, ContactGPS, ContactBox, ContactIcon, ContactIconColor,ContactText, ContactH3, ContactTextP,ContactEvent2,ContactSocial, ContactUL, ContactLI} from './ContactsElements'
+import { ContactContainer, ContactHeader, ContactSection, ContactH1, ContactEvent, ContactInfo, ContactGPS, ContactBox, ContactIcon, ContactIconColor,ContactText, ContactH3, ContactTextP,ContactEvent2} from './ContactsElements'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMapMarkerAlt, faPhoneAlt, faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import { FaInstagramSquare,FaFacebookSquare  } from 'react-icons/fa';
 import Footer from '../Footer'
+
+
+/*
+<ContactSocial>
+                        <ContactNew>SOCIAL</ContactNew>
+                        <ContactUL>
+                            <ContactLI><ContactA href="https://www.instagram.com/sofiajure.hairartist/" className = "Instagram Social"><ContactI><ContactColor1><FaInstagramSquare/></ContactColor1></ContactI></ContactA></ContactLI>
+                            <ContactLI><ContactA href="https://m.facebook.com/sofiajure.hairartist" className = "Facebook Social"><ContactI><ContactColor2><FaFacebookSquare/></ContactColor2></ContactI></ContactA></ContactLI>
+                        </ContactUL>
+                    </ContactSocial>
+
+*/
 
 const Contacts = () => {
     return (
@@ -45,13 +56,6 @@ const Contacts = () => {
                             </ContactBox>
                     </ContactInfo>
 
-                    <ContactSocial>
-                        <ContactNew>SOCIAL</ContactNew>
-                        <ContactUL>
-                            <ContactLI><ContactA href="https://www.instagram.com/sofiajure.hairartist/" className = "Instagram Social"><ContactI><ContactColor1><FaInstagramSquare/></ContactColor1></ContactI></ContactA></ContactLI>
-                            <ContactLI><ContactA href="https://m.facebook.com/sofiajure.hairartist" className = "Facebook Social"><ContactI><ContactColor2><FaFacebookSquare/></ContactColor2></ContactI></ContactA></ContactLI>
-                        </ContactUL>
-                    </ContactSocial>
                 </ContactEvent>
 
                 {
@@ -71,10 +75,8 @@ const Contacts = () => {
                                 tabIndex="0" />
                     </ContactGPS>
                 </ContactEvent2>
-                <Footer/>
             </ContactSection>
-
-
+            <Footer/>
                        
         </ContactContainer>
         

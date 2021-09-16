@@ -43,10 +43,10 @@ color: white;
 `;
 
 export const ContactHeader = styled.div`
-margin: -50px 0 120px 0;
+margin: 100px 0 120px 0;
 
 @media screen and (max-width: 768px){
-    margin: -70px 0 -100px 0;
+    margin: -70px 0 -80px 0;
 }
 `;
 
@@ -65,7 +65,7 @@ transition: all 0.2s ease-in-out;
 overflow: hidden;
 
 @media screen and (max-width: 768px){
-    margin: 100px 0 -30px 0;
+    margin: 60px 0 -100px 0;
 }
 
 `;
