@@ -15,7 +15,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1;
 
 
     @media screen and (max-width: 960px){
@@ -97,7 +97,7 @@ height: 100%
 cursor: pointer;
 
 &.active{
-    border-bottom: 3px solid #01bf71
+    border: 3px solid #01bf71
 }
 
 &:hover {

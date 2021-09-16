@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo,MoblieIcon,NavMenu,NavItem,NavLinks, NavBtnLink, NavBtn} from './NavbarElements'
+import { animateScroll as scroll } from 'react-scroll'
 
 //  working with navbar here
 
@@ -18,11 +19,32 @@ We will fix it later
 
 */
 const Navbar = ({toggle}) => {
+
+    /*
+    const [scrollNav,setScrollNav] = useState(false)
+
+    const changeNav = ()=>{
+        if(window.scrollY >= 80){
+            setScrollNav(true);
+        }else{
+            setScrollNav(false);
+        }
+    };
+
+    useEffect(()=>{
+        window.addEventListener('scroll',changeNav);
+    },[])
+
+*/
+
+    const toggleHome = () =>{
+        scroll.scrollToTop();
+    }
     return (
         <>
-        <Nav>
+        <Nav >
             <NavbarContainer>
-                <NavLogo to='/' smooth={true} duration={500} spy={true} exact="true" offset={-80} >Sofia Jure</NavLogo>
+                <NavLogo to='/' onClick = {toggleHome} >Sofia Jure</NavLogo>
 
                 <MoblieIcon onClick= {toggle}>
                     <FaBars/>
@@ -30,16 +52,16 @@ const Navbar = ({toggle}) => {
 
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to = "about">About</NavLinks>
+                        <NavLinks to = "about" smooth = "true" duration = {500} spy = {true} exact = 'true' offest={-80}>About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to = "services">Services</NavLinks>
+                        <NavLinks to = "services"smooth = "true" duration = {500} spy = {true} exact = 'true' offest={-10}>Services</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to = "products">Products</NavLinks>
+                        <NavLinks to = "products"smooth = "true" duration = {500} spy = {true} exact = 'true' offest={-10}>Products</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to = "deals">Deals</NavLinks>
+                        <NavLinks to = "deals"smooth = "true" duration = {500} spy = {true} exact = 'true' offest={-10}>Deals</NavLinks>
                     </NavItem>
                 </NavMenu>
 

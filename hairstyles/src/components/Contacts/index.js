@@ -48,8 +48,8 @@ const Contacts = () => {
                     <ContactSocial>
                         <ContactNew>SOCIAL</ContactNew>
                         <ContactUL>
-                            <ContactLI><ContactA href="https://www.instagram.com/sofiajure.hairartist/"><ContactI><ContactColor1><FaInstagramSquare/></ContactColor1></ContactI></ContactA></ContactLI>
-                            <ContactLI><ContactA href="https://m.facebook.com/sofiajure.hairartist"><ContactI><ContactColor2><FaFacebookSquare/></ContactColor2></ContactI></ContactA></ContactLI>
+                            <ContactLI><ContactA href="https://www.instagram.com/sofiajure.hairartist/" className = "Instagram Social"><ContactI><ContactColor1><FaInstagramSquare/></ContactColor1></ContactI></ContactA></ContactLI>
+                            <ContactLI><ContactA href="https://m.facebook.com/sofiajure.hairartist" className = "Facebook Social"><ContactI><ContactColor2><FaFacebookSquare/></ContactColor2></ContactI></ContactA></ContactLI>
                         </ContactUL>
                     </ContactSocial>
                 </ContactEvent>
