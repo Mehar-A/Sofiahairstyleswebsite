@@ -1,14 +1,13 @@
 import React, {useState} from 'react'
 
 
-const LoginForm = ({Login}) => {
+const LoginForm = ({Login,error}) => {
 
-    const [details,SetDetails] = useState ({username:"", password:""});
+    const [details,setDetails] = useState ({username:"", password:""});
     
     const submitHandler = e =>{
         e.preventDefault(); // doesnt load itself
-        // console.log(details);
-        console.log(Login(details));
+        Login(details);
     }
 
 
@@ -17,15 +16,15 @@ const LoginForm = ({Login}) => {
         <form onSubmit={submitHandler}>
             <div className='inner'>
                 <h2>Login</h2>
-                {/*Error */}
+                {(error!="") ? (<div className='error'>{error}</div>): "" }
                 <div className='group'>
                     <label htmlFor='username'>username</label>
-                    <input type = "text" name='user' id='user'/>
+                    <input type = "text" name='user' id='user' onChange={e =>setDetails({...details, username: e.target.value})} value={details.user}/>
                 </div>
 
                 <div className='group'>
                     <label htmlFor='password'>password</label>
-                    <input type = "text" name='pass' id='pass'/>
+                    <input type = "password" name='pass' id='pass'onChange={e =>setDetails({...details, password: e.target.value})} value={details.pass}/>
                 </div>
                 <input type="submit" value = "Sign In"/>
             </div>
