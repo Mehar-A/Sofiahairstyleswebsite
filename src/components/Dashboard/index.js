@@ -3,7 +3,7 @@ import {BtnWrap} from './DashboardElemetns';
 import { Button2 } from '../ButtomElements';
 
 const Dashboard = ({Logout}) => {
-    const [details,setDetails] = useState ({username:"", password:""});
+    const [details] = useState ({username:"", password:""});
 
     const submitHandler = e =>{
         e.preventDefault(); // doesnt load itself

@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Dashboard from '../Dashboard';
-import Deals from '../Deals';
 import LoginForm from './LoginForm';
 
 const LoginPage = () => {
@@ -15,7 +14,7 @@ const LoginPage = () => {
 
     const Login = details=>{
         console.log(details);
-        if((details.username == adminUser.username) && (details.password == adminUser.password)){
+        if((details.username === adminUser.username) && (details.password === adminUser.password)){
             console.log("we are loggging in...");
             SetUser({
                 username: details.username,
