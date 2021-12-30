@@ -12,7 +12,7 @@ import Icon6 from '../../images/products/png/6.png'
 const Products = () => {
     return (
         <ProductContainers id="products">
-            <ProductH1>Our Products</ProductH1>
+            <ProductH1>Products</ProductH1>
             <ProductWarpper>
                 <ProductCard>
                     <ProductH2>CBD Moisturize Conditioner</ProductH2>   

@@ -1,0 +1,143 @@
+[{
+  "version": "1.0",
+  "image": {
+    "name": "/home/videosdownloader/public_html/image/public/uploadt/waxing.png",
+    "baseName": "waxing.png",
+    "format": "PNG",
+    "formatDescription": "PNG",
+    "mimeType": "image/png",
+    "class": "DirectClass",
+    "geometry": {
+      "width": 96,
+      "height": 96,
+      "x": 0,
+      "y": 0
+    },
+    "units": "Undefined",
+    "type": "PaletteAlpha",
+    "baseType": "Undefined",
+    "endianness": "Undefined",
+    "colorspace": "sRGB",
+    "depth": 8,
+    "baseDepth": 8,
+    "channelDepth": {
+      "alpha": 8,
+      "red": 8,
+      "green": 8,
+      "blue": 8
+    },
+    "pixels": 36864,
+    "imageStatistics": {
+      "Overall": {
+        "min": 0,
+        "max": 255,
+        "mean": 42.8703,
+        "median": 0,
+        "standardDeviation": 20489.8,
+        "kurtosis": 1.13834,
+        "skewness": 1.72391,
+        "entropy": 0.185588
+      }
+    },
+    "channelStatistics": {
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "mean": 57.8108,
+        "median": 0,
+        "standardDeviation": 27169.3,
+        "kurtosis": -0.279627,
+        "skewness": 1.3038,
+        "entropy": 0.157077
+      },
+      "red": {
+        "min": 0,
+        "max": 128,
+        "mean": 14.9889,
+        "median": 0,
+        "standardDeviation": 7158.31,
+        "kurtosis": 1.11427,
+        "skewness": 1.54936,
+        "entropy": 0.205448
+      },
+      "green": {
+        "min": 0,
+        "max": 255,
+        "mean": 42.8532,
+        "median": 0,
+        "standardDeviation": 22003,
+        "kurtosis": 0.369644,
+        "skewness": 1.5345,
+        "entropy": 0.17074
+      },
+      "blue": {
+        "min": 0,
+        "max": 255,
+        "mean": 55.8283,
+        "median": 0,
+        "standardDeviation": 25628.5,
+        "kurtosis": -0.458419,
+        "skewness": 1.2344,
+        "entropy": 0.209085
+      }
+    },
+    "alpha": "#00000000",
+    "renderingIntent": "Perceptual",
+    "gamma": 0.454545,
+    "chromaticity": {
+      "redPrimary": {
+        "x": 0.64,
+        "y": 0.33
+      },
+      "greenPrimary": {
+        "x": 0.3,
+        "y": 0.6
+      },
+      "bluePrimary": {
+        "x": 0.15,
+        "y": 0.06
+      },
+      "whitePrimary": {
+        "x": 0.3127,
+        "y": 0.329
+      }
+    },
+    "matteColor": "#BDBDBD",
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "#DFDFDF",
+    "transparentColor": "#00000000",
+    "interlace": "None",
+    "intensity": "Undefined",
+    "compose": "Over",
+    "pageGeometry": {
+      "width": 96,
+      "height": 96,
+      "x": 0,
+      "y": 0
+    },
+    "dispose": "Undefined",
+    "iterations": 0,
+    "compression": "Zip",
+    "orientation": "Undefined",
+    "properties": {
+      "date:create": "2021-12-28T19:11:29+00:00",
+      "date:modify": "2021-12-28T19:11:29+00:00",
+      "png:bKGD": "chunk was found (see Background color, above)",
+      "png:IHDR.bit-depth-orig": "8",
+      "png:IHDR.bit_depth": "8",
+      "png:IHDR.color-type-orig": "6",
+      "png:IHDR.color_type": "6 (RGBA)",
+      "png:IHDR.interlace_method": "0 (Not interlaced)",
+      "png:IHDR.width,height": "96, 96",
+      "png:sRGB": "intent=0 (Perceptual Intent)",
+      "signature": "06742ba7ed32b0da11c6ffba8a0a62c9e5be5fdf5f3174769bcc7b0a8e94dcc8"
+    },
+    "tainted": false,
+    "filesize": "2259B",
+    "numberPixels": "9216",
+    "pixelsPerSecond": "4291880B",
+    "userTime": "0.000u",
+    "elapsedTime": "0:01.002",
+    "version": "ImageMagick 7.0.10-58 Q16 x86_64 2021-01-14 https://imagemagick.org"
+  }
+}]

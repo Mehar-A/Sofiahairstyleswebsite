@@ -39,3 +39,22 @@ export const Button2 = styled.button`
     background-image: linear-gradient(to top, red, #FFD700)
 }
 `;
+
+export const Button3 = styled.button`
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #01BF71, #010606);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #000;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 0.8rem;
+
+&:hover{
+    transition: all 0.2s ease-in-out;
+    background-image: linear-gradient(to top, red, #FFD700)
+}
+`;

@@ -16,7 +16,6 @@ display: grid;
 z-index: 1;
 height: 950px;
 width: 100%;
-max-width: 1100px;
 margin-right: auto;
 margin-left : auto;
 padding: 0 24px;
@@ -45,7 +44,10 @@ export const Column2 = styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col2;
-margin: 0 0 0 100px;
+
+@media screen and (max-width: 768px){
+    height: 600px;
+}
 `;
 
 export const TextWrapper = styled.div`
@@ -91,8 +93,13 @@ justify-content: flex-start;
 `;
 
 export const ImgWrap = styled.div`
-max-width: 555px
-height: 100%;
+max-width: 555px;
+
+@media screen and (max-width: 768px){
+    height: 1100px;
+    width: 400px;
+    margin: 0 300px 0 0;
+}
 `;
 
 export const Img = styled.img`
@@ -102,8 +109,5 @@ margin: 0 0 10px 0;
 padding-right: 0;
 backgroundColor: 'transparent'
 
-@media screen and (max-width: 768px){
-    height: 1100px;
-}
 
 `;

@@ -78,7 +78,7 @@ margin-right: -22px;
 `;
 
 export const NavItem = styled.li`
-height: 30px;
+height: 20px;
 &:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
