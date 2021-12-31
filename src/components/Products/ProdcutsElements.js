@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled ,{css}from 'styled-components'
 
 
 export const ProductContainers = styled.div`
@@ -109,4 +109,82 @@ text-align: center;
 @media screen and (max-width: 768px){
     font-size: 0.8rem;
 }
+`;
+
+// this style is for the cards
+export const CardContainer = styled.div`
+display: flex;
+flex-direction: column;
+transition: z-index 1500ms, transform 1500ms;
+z-index: 0;
+-webkit-perspective: 100px;
+perspective: 1000px;
+transform-style: preserve-3d;
+
+
+justify-content: flex-start;
+align-items: center;
+border-radius: 10px;
+max-height: 340px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+&:hover{
+    z-index: 1;
+}
+`;
+
+
+export const CardSide = css`
+width: 100%;
+min-width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+-moz-backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border: 2px solid #fff;
+`;
+
+
+export const CardFront = styled.div`
+${CardSide}
+z-index: 0;
+background: #fff;
+`;
+
+export const CardBack = styled.div`
+${CardSide}
+transform: rotateY(180deg) translate(100%, 0);
+background: #fff;
+z-index: 1;
+`;
+
+/*
+This is for the button option
+export const CardFront2 = styled.div`
+${CardSide}
+z-index: 0;
+background: #fff;
+`;
+
+export const CardBack2 = styled.div`
+${CardSide}
+transform: rotateY(180deg) translate(100%, 0);
+background: #fff;
+z-index: 1;
+`;
+
+*/
+export const CardInner = styled.div`
+flex: 1;
+display: flex;
+transition: transform 1500ms;
+transform-style: preserve-3d;
+
+&:hover{
+    transform:rotateY(180deg);
+    cursor: pointer;
+}
+
 `;

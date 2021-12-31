@@ -1,18 +1,83 @@
-import React from 'react'
-import {ProductContainers,ProductWarpper,ProductCard,ProductIcon, ProductH2, ProductP, ProductH1 } from './ProdcutsElements'
+import React ,{useState}from 'react'
+import {ProductContainers,ProductWarpper,ProductCard,ProductIcon,ProductH1,ProductH2,ProductP} from './ProdcutsElements'
 import Icon1 from '../../images/products/png/1.png'
+
+/*
 import Icon2 from '../../images/products/png/2.png'
 import Icon3 from '../../images/products/png/3.png'
 import Icon4 from '../../images/products/png/4.png'
 import Icon5 from '../../images/products/png/5.png'
 import Icon6 from '../../images/products/png/6.png'
+*/
+
+//import {CardContainer,CardInner,CardFront, CardBack,CardFront2, CardBack2} from './ProdcutsElements'
+
+/*
+import './ProductsElements.css'
 
 
-// <ProductH1>Products</ProductH1>
+import {BtnWrap} from '../Services/ServicesElements';
+import { Button3 } from '../ButtomElements';
+
+
+<ProductContainers id="products">
+            <BtnWrap>
+                <Button3 onClick={Addnew}>Back</Button3>
+            </BtnWrap>
+            <ProductWarpper id="div-container">
+            </ProductWarpper>
+            
+        </ProductContainers>
+
+*/
 const Products = () => {
+    //const BtnAdd = document.querySelector("div");
+    //const DivContainer = document.getElementById("div-container");
+    /*
+    const Addnew = () => {
+        
+        const newDiv = document.createElement("div");
+        const newH2 = document.createElement("h2");
+        const newImage = document.createElement("img");
+        const newP = document.createElement("p");
+        //console.log("add");
+        newDiv.classList.add('ProductCard');
+        newH2.classList.add('ProductH2');
+        newH2.textContent = 'CBD Moisturize Conditioner';
+        newImage.src = Icon1;
+        newP.textContent = 'Moisturize, strengthen and repair your hair with our CBD Conditioner.'
+        //console.log(newDiv);
+        //console.log(ProductCard);
+        newDiv.appendChild(newH2);
+        newDiv.appendChild(newImage);
+        newDiv.appendChild(newP);
+        document.getElementById("div-container").appendChild(newDiv);
+        
+      
+    };
+    */
+    //const[flipped, setFlipped] = useState(false);
+
+    //BtnAdd.addEventListener("click", Addnew);
+
+    
     return (
         <ProductContainers id="products">
             <ProductH1>Products</ProductH1>
+            <ProductWarpper>
+                
+            </ProductWarpper>
+            
+        </ProductContainers>
+    )
+}
+export default Products
+
+
+
+
+/*
+<ProductH1>Products</ProductH1>
             <ProductWarpper>
                 <ProductCard>
                     <ProductH2>CBD Moisturize Conditioner</ProductH2>   
@@ -45,9 +110,7 @@ const Products = () => {
                     <ProductP>Shampoo and conditioner are the first line of defense for your hair.</ProductP>                
                 </ProductCard>
             </ProductWarpper>
-            
-        </ProductContainers>
-    )
-}
 
-export default Products
+
+
+*/

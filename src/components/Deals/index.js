@@ -5,11 +5,12 @@ import { Button } from '../ButtomElements'
 import CanImg from '../../images/deals/newdeals.png'
 
 const Deals = () => {
+
     return (
-        <div id = "deals" class = "main">
-            <div class="card">
-                <div class="circle"></div>
-                <div class="content">
+        <div id = "deals" className = "main">
+            <div className="card">
+                <div className="circle"></div>
+                <div className="content">
                     <h2>Sales</h2>
                     <p>50% off any Hair Service! *New Clients Only*<br/><br/><br/>$30 classic Last Set *Model Fee*</p>
                     <BtnWrap>
