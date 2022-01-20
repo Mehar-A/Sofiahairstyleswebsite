@@ -23,7 +23,7 @@ background: #fff;
 }
 
 
-.card{
+.Dealscard{
 position: relative;
 width: 800px;
 height: 400px;
@@ -33,7 +33,7 @@ border-radius: 20px;
 transition: 0.5s;
 }
 
-.card .circle{
+.Dealscard .circle{
 position: absolute;
 top: 0;
 left: 0;
@@ -44,7 +44,7 @@ border-radius: 20px;
 overflow: hidden;
 }
 
-.card .circle::before{
+.Dealscard .circle::before{
     content: '';
     position: absolute;
     top: 0;
@@ -55,12 +55,12 @@ overflow: hidden;
     transition: 0.5s;
 }
 
-.card:hover .circle:before{
+.Dealscard:hover .circle:before{
     background: #0065c3;
     clip-path: circle(700px at center);
 }
 
-.card img{
+.Dealscard img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,13 +70,13 @@ overflow: hidden;
     transition: 0.5s;
 }
 
-.card:hover img{
+.Dealscard:hover img{
     left: 78%;
     height: 300px;
 
 }
 
-.card .content{
+.Dealscard .content{
     position: relative;
     width: 50%;
     padding: 20px 20px 20px 40px;
@@ -85,14 +85,14 @@ overflow: hidden;
     visibility: hidden;
 }
 
-.card:hover .content{
+.Dealscard:hover .content{
     left: 0;
     opacity: 1;
     visibility: visible;
 
 }
 
-.card .content h2{
+.Dealscard .content h2{
     margin-bottom: 40px;
     color:black;
     text-transform: uppercase;
@@ -100,7 +100,7 @@ overflow: hidden;
     line-height: 1em;
 }
 
-.card .content p{
+.Dealscard .content p{
     margin-top: 40px;
     margin-bottom: 40px;
     color: black;
@@ -108,24 +108,24 @@ overflow: hidden;
 
 @media (max-width: 768px){
     
-    .card{
+    .Dealscard{
         width: auto;
         max-width: 350px;
         align-items: flex-start;
         margin: 10px;
     }
 
-    .card:hover{
+    .Dealscard:hover{
         height: 600px;
     }
 
-    .card .content{
+    .Dealscard .content{
         width: 100%;
         left: 0;
         padding: 30px;
     }
 
-    .card:hover img{
+    .Dealscard:hover img{
         margin-top: 20px;
         top: 70%;
         left: 50%;
@@ -134,7 +134,7 @@ overflow: hidden;
 }
 
 @media (max-width: 480px){
-    .card .content{
+    .Dealscard .content{
         padding: 20px;
     }
 }

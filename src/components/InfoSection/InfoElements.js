@@ -5,9 +5,11 @@ import styled from 'styled-components'
 export const InfoContainer = styled.div`
 color: #fff;
 background: ${({lightBg}) => (lightBg ? '#xf9f9f9' : '#010606')};
+overflow: hidden;
 
 @media screen and (max-width: 768px){
     padding: 100px 0;
+    height: 1100px;
 }
 `;
 
@@ -21,6 +23,7 @@ margin-left : auto;
 padding: 0 24px;
 justify-context: center;
 overflow: hidden;
+
 `;
 
 export const InfoRow = styled.div`
@@ -35,18 +38,25 @@ grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`
 `;
 
 export const Column1 = styled.div`
-margin-bottom: 15px;
-padding: 0 15px;
+
 grid-area: col1;
+display: flex;
+justify-content: left;
+padding 100px;
+@media screen and (max-width: 768px){
+    padding: 20px;
+}
 `;
 
 export const Column2 = styled.div`
-margin-bottom: 15px;
-padding: 0 15px;
 grid-area: col2;
+display: flex;
+justify-content: right;
+padding: 50px;
 
 @media screen and (max-width: 768px){
-    height: 600px;
+    padding: 0px;
+    justify-content: left;
 }
 `;
 
@@ -95,18 +105,18 @@ justify-content: flex-start;
 export const ImgWrap = styled.div`
 max-width: 555px;
 
+
 @media screen and (max-width: 768px){
-    height: 1100px;
+    height: 600px;
     width: 400px;
-    margin: 0 300px 0 0;
+    display: flex;
+    justify-content: left;
+    margin: -50px 0 0 0;
 }
 `;
 
 export const Img = styled.img`
 width: 100%;
-height: 600px;
-margin: 0 0 10px 0;
-padding-right: 0;
 backgroundColor: 'transparent'
 
 

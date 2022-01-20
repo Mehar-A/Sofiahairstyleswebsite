@@ -37,31 +37,31 @@ const Dashboard = ({Logout}) => {
         <Router>
             <IconContext.Provider value={{ color: '#fff' }}>
                 <div className='navbar'>
-                <Link to='#' className='menu-bars'>
-                    <FaIcons.FaBars onClick={showSidebar} />
-                </Link>
-                <BtnWrap>
-                        <Button2 onClick={submitHandler} smooth={true} duration={500} spy={true} exact="true" offset={0}>Logout</Button2>
-                </BtnWrap>
+                    <Link to='#' className='menu-bars'>
+                        <FaIcons.FaBars onClick={showSidebar} />
+                    </Link>
+                    <BtnWrap>
+                            <Button2 onClick={submitHandler} smooth={true} duration={500} spy={true} exact="true" offset={0}>Logout</Button2>
+                    </BtnWrap>
                 </div>
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                <ul className='nav-menu-items' onClick={showSidebar}>
-                    <li className='navbar-toggle'>
-                    <Link to='#' className='menu-bars'>
-                        <AiIcons.AiOutlineClose />
-                    </Link>
-                    </li>
-                    {SidebarData.map((item, index) => {
-                    return (
-                        <li key={index} className={item.cName}>
-                        <Link to={item.path}>
-                            {item.icon}
-                            <span>{item.title}</span>
+                    <ul className='nav-menu-items' onClick={showSidebar}>
+                        <li className='navbar-toggle'>
+                        <Link to='#' className='menu-bars'>
+                            <AiIcons.AiOutlineClose />
                         </Link>
                         </li>
-                    );
-                    })}
-                </ul>
+                        {SidebarData.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                            <Link to={item.path}>
+                                {item.icon}
+                                <span>{item.title}</span>
+                            </Link>
+                            </li>
+                        );
+                        })}
+                    </ul>
                 </nav>                
             </IconContext.Provider>
             <Switch>

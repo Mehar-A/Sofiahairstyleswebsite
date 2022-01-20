@@ -8,22 +8,22 @@ export const SidebarData = [
       cName: 'nav-text'
     },
     {
-      title: 'about',
+      title: 'About',
       path: '/about',
       cName: 'nav-text'
     },
     {
-      title: 'services',
+      title: 'Services',
       path: '/services',
       cName: 'nav-text'
     },
     {
-      title: 'products',
+      title: 'Products',
       path: '/products',
       cName: 'nav-text'
     },
     {
-      title: 'deals',
+      title: 'Deals',
       path: '/deals',
       cName: 'nav-text'
     },

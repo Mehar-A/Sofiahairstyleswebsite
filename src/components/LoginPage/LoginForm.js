@@ -27,7 +27,7 @@ const LoginForm = ({Login,error}) => {
                    <Column2>
                         <form onSubmit={submitHandler}>
                             <div className='inner'>
-                                <h2>Login:</h2>
+                                <h2>Login</h2>
                                 {(error!=="") ? (<div className='error'>{error}</div>): "" }
                                 <div className='group'>
                                     <label htmlFor='username'>Username:</label>

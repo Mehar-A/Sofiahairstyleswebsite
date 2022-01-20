@@ -28,6 +28,7 @@
 .nav-menu.active {
   left: 0;
   transition: 350ms;
+  margin: 0 100px 0 0;
 }
 
 .nav-text {

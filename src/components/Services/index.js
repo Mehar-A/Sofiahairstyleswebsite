@@ -83,7 +83,7 @@ const ServiceSection = () => {
 
     }, [])
 
-
+    /*
     const container5 = useRef(null) // starting the animation
     useEffect(()=> {
         lottie.loadAnimation({
@@ -95,7 +95,7 @@ const ServiceSection = () => {
         })
 
     }, [])
-
+*/
     const container6 = useRef(null) // starting the animation
     useEffect(()=> {
         lottie.loadAnimation({
@@ -183,7 +183,6 @@ const ServiceSection = () => {
                     <CardInner className={flipped ? "flipped": ""}>
                         <CardFront>
                             <ServicesH2>Waxing</ServicesH2>
-                            <ServicesAnimation ref={container5}></ServicesAnimation>
                         </CardFront>
                         <CardBack>
                             <ServicesP>We do Waxing.</ServicesP>

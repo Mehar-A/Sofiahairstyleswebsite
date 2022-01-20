@@ -8,4 +8,6 @@ text-align: left;
 vertical-align: middle;
 `;
 
-
+export const FormElement = styled.form`
+background: red;
+`;
